@@ -77,4 +77,8 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+    public boolean isCity(City city1, City city2) {
+        return false;
+    }
 }
