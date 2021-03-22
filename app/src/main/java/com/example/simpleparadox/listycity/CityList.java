@@ -79,6 +79,11 @@ public class CityList {
     }
 
     public boolean isCity(City city1, City city2) {
-        return false;
+        if(city1.getCityName().equals(city2.getCityName()) && city1.getProvinceName().equals(city2.getProvinceName())) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 }

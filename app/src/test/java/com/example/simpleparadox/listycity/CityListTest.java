@@ -98,7 +98,12 @@ class CityListTest {
     void testIsCity() {
         CityList cityList = mockCityList();
         City city1 = mockCity();
-        City city2 = new City("Chengdu", "Sichuan");
-        assertTrue(cityList.isCity(city1, city2));
+        City city2 = new City("Edmonton", "Alberta");
+        if(cityList.hasCity(city1)) {
+            assertTrue(cityList.isCity(city1, city2));
+        }
+        else{
+            assertFalse(cityList.isCity(city1, city2));
+        }
     }
 }
